@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #73a854;
+    --secondary-color: #f1ebda;
+    --accent-color: #BC4749;
+    --text-primary: #1E1E1E;
+    --text-secondary: #555555;
+    --btn-hover: #54942f;
+    --bg-text: #ffffff;
+    --card-bg: #FAFAF8;
+    --border-color: #E0E0E0;
+
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Merriweather', serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: var(--text-primary);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 25px;
+    word-spacing: 2px;
+    letter-spacing: 3px;
+}
+
+.navbar-brand>i {
+    color: var(--primary-color);
+}
+
+.navbar-collapse .form-control:hover {
+    box-shadow: 0 4px 4px rgba(161, 220, 137, 0.2);
+}
+
+.navbar-collapse .btn {
+    outline: 3px solid var(--primary-color);
+}
+
+.navbar-collapse .btn:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-text);
+    box-shadow: 2px 6px 6px rgba(161, 220, 137, 0.3);
+}
+
+.nav-item .btn1 {
+
+    background-color: var(--primary-color);
+    color: var(--bg-text);
+}
+
+.nav-item .btn1:hover {
+    background-color: var(--btn-hover);
+    color: var(--bg-text);
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+    transform: translateY(-5px);
+}
+
+/* modal  */
+
+.modal-content {
+    border-radius: 10px;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    border-bottom: none;
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 8px 8px 0 0;
+}
+
+.modal-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--bg-text);
+    font-family: var(--font-secondary);
+    width: 100%;
+    text-align: center;
+}
+.modal-body {
+    padding: 2rem;
+}
+
+.form-label {
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #6A994E;
+  box-shadow: 0 0 6px rgba(106, 153, 78, 0.4);
+}
+
+.modal-body .btn {
+    background-color: var(--primary-color);
+    color: var(--bg-text);
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+    border-radius: 8px;
+}
+.modal-body .btn:hover {
+    background-color: var(--btn-hover);
+    color: var(--bg-text);
+    box-shadow: 0 4px 8px rgba(106, 153, 78, 0.3);
+
+}
