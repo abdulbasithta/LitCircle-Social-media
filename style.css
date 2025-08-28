@@ -69,6 +69,45 @@ body {
     transform: translateY(-5px);
 }
 
+.dropdown-toggle {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+.dropdown-item:hover {
+    color: var(--accent-color);
+}
+.search-container {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+}
+
+.search-input {
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding-left: 40px;
+    background-color: var(--bg-text);
+    height: 40px; 
+    box-shadow: none;
+    max-width: 200px;
+}
+
+.search-input:focus {
+    background-color: #fff;
+    outline: none;
+    border-color: #0d6efd;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+.dropdown-menu {
+    max-width: 200px;
+}
 
 /* modal  */
 
@@ -258,5 +297,129 @@ body {
 }
 .footer-social:hover {
     color: var(--btn-hover);
+
+}
+
+/* left sidebar */
+
+.left-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.cover-section img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.content-section {
+    padding: 1.5rem;
+    position: relative;
+}
+
+.content-section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    border: 4px solid var(--border-color);
+}
+.content-section .p-name {
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.content-section .p-bio {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.list-item {
+    text-decoration: none;
+    color: var(--text-primary);
+
+}
+.list-item:hover {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* create post */
+
+.btn-group {
+    display: flex;
+    justify-content: space-around;
+
+}
+.btn-group button:nth-child(1) i {
+    color: var(--btn-hover);
+}
+.btn-group button:nth-child(2) i {
+    color: var(--text-secondary);
+}
+.btn-group button:nth-child(3) i {
+    color: var(--accent-color);
+}
+
+.btn-group button > i {
+    margin-right: 0.5rem;
+}
+.btn-group button {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+.btn-group button:hover {
+    color: var(--primary-color);
+}
+
+.btn-post{
+    text-align: center;
+    margin-right: 7rem;
+}
+.btn-post button{
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    color: var(--bg-text);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-post button:hover {
+    background-color:var(--btn-hover);
+    color: var(--bg-text);
+}
+
+.feed-body img {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+.feed-body p {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    margin: 1rem;
+}
+
+.btns button:nth-child(1):hover i {
+  color: var(--accent-color);
+  font-weight: 900;
+}
+
+.right-cards h6 {
+    font-weight: 600;
+    margin-bottom: 1rem;
 
 }

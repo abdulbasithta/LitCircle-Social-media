@@ -1,11 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LitCircle | Home</title>
+    <title>LitCircle | Feed</title>
+    <!-- bs cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- bs js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+
+    <!-- nabvar section -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container">
+            <a class="navbar-brand " href="./index.html">
+                <i class="fa-solid fa-book-open"></i>
+                LitCircle
+            </a>
+            <form class="d-flex mx-auto" role="search">
+                <div class="search-container">
+                    <i class="fa-solid fa-search search-icon"></i>
+                    <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
+                </div>
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mb-2">
+                    <li class="nav-item me-lg-4">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item me-lg-3 mb-sm-2">
+                        <a class="nav-link position-relative" href="#">
+                            Notification
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-lg-4">
+                        <a class="nav-link" href="#">Messages</a>
+                    </li>
+                    <li class="nav-item dropdown position-relative">
+                        <a class=" dropdown-toggle ms-5" href="#" role="button" data-bs-toggle="dropdown">
+                            <img src="./images/oguz-yagiz-kara-MZf0mI14RI0-unsplash.jpg"
+                                class="rounded-circle position-absolute top-0  start-0" width="35" height="35"
+                                alt="Profile">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- section start -->
+    <section class="container">
+        <div class="row">
+
+            <!-- left sidebar -->
+            <div class="d-none d-lg-block col-lg-3 mt-lg-4">
+                <div class="left-card">
+                    <div class="cover-section">
+                        <img src="./images/dad-hotel-WUoztQ3hp9Q-unsplash.jpg" alt="Cover image">
+                    </div>
+                    <div class="content-section">
+                        <img src="./images/oguz-yagiz-kara-MZf0mI14RI0-unsplash.jpg" alt="profile picture"
+                            class="rounded-circle">
+                        <p class="p-name mb-1">Brixton Otto</p>
+                        <p class="p-bio">Book Lover | Avid Reader | Literature Enthusiast</p>
+                    </div>
+                </div>
+
+                <div class="left-card p-3 d-flex flex-column gap-3 mt-lg-4">
+                    <a href="#" class="list-item">My Shelf</a>
+                    <a href="#" class="list-item ">Book Clubs</a>
+                    <a href="#" class="list-item">Trending Genres</a>
+                    <a href="#" class="list-item">Challenges</a>
+                </div>
+            </div>
+            <!-- main content -->
+            <div class="col-lg-6 mt-sm-4 mt-lg-0">
+
+                <!-- create post -->
+                <div class="card mb-4 rounded-3 mt-lg-4 mt-4">
+                    <div class="card-body d-flex">
+                        <img src="./images/oguz-yagiz-kara-MZf0mI14RI0-unsplash.jpg" class="rounded-circle me-3"
+                            width="50" height="50">
+                        <div class="flex-grow-1">
+                            <textarea class="form-control mb-2 rounded-4" placeholder="What are you reading?"
+                                rows="2"></textarea>
+
+                            <div class="btn-group">
+                                <button class="btn btn-sm"><i class="fa-solid fa-image"></i>
+                                    Image</button>
+                                <button class="btn  btn-sm"><i class="fa-solid fa-quote-right"></i>
+                                    Quotes</button>
+                                <button class="btn  btn-sm"><i class="fa-solid fa-book"></i>
+                                    Reviews </button>
+                            </div>
+
+                            <div class="btn-post">
+                                <button class="btn btn-sm">Post</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- feed post 1-->
+
+                <div class="card mb-4 rounded-4">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img src="./images/oguz-yagiz-kara-MZf0mI14RI0-unsplash.jpg" class="rounded-circle me-2"
+                                style="width: 50px; height: 50px;">
+                            <div class="d-flex flex-column mt-2">
+                                <strong>Brixton Otto</strong>
+                                <small class="text-muted">Just now</small>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a href="#" class="text-muted" data-bs-toggle="dropdown">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="feed-body">
+                        <p>"The Silent Patient" by Alex Michaelides</p>
+                        <p>"A well-paced and suspenseful thriller with a brilliant, mind-bending twist. A must-read
+                            for fans of the genre..."</p>
+                        <img src="./images/The Silent Patient.jpeg" class=" mb-2" alt="Book Cover">
+                    </div>
+
+                    <div class="card-footer d-flex justify-content-between">
+                        <div class="btns">
+                            <button class="btn btn-sm"><i class="fa-regular fa-heart"></i> Like</button>
+                            <button class="btn btn-sm" data-bs-toggle="collapse" data-bs-target="#comments1"><i
+                                    class="fa-regular fa-comment"></i> Comment</button>
+                            <button class="btn btn-sm"><i class="fa-solid fa-share"></i> Share</button>
+                        </div>
+                        <button class="btn btn-sm"><i class="fa-regular fa-bookmark"></i> Save</button>
+                    </div>
+
+                    <!-- Comments -->
+                    <div class="collapse" id="comments1">
+                        <div class="feed-body border-top">
+                            <input type="text" class="form-control" placeholder="Add a comment...">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- feed post 2-->
+
+                <div class="card mb-4 rounded-4">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img src="./images/oguz-yagiz-kara-MZf0mI14RI0-unsplash.jpg" class="rounded-circle me-2"
+                                style="width: 50px; height: 50px;">
+                            <div class="d-flex flex-column mt-2">
+                                <strong>Brixton Otto</strong>
+                                <small class="text-muted">Just now</small>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a href="#" class="text-muted" data-bs-toggle="dropdown">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="feed-body">
+                        <p>"The Silent Patient" by Alex Michaelides</p>
+                        <p>"A well-paced and suspenseful thriller with a brilliant, mind-bending twist. A must-read
+                            for fans of the genre..."</p>
+                        <img src="./images/The Silent Patient.jpeg" class=" mb-2" alt="Book Cover">
+                    </div>
+
+                    <div class="card-footer d-flex justify-content-between">
+                        <div class="btns">
+                            <button class="btn btn-sm"><i class="fa-regular fa-heart"></i> Like</button>
+                            <button class="btn btn-sm" data-bs-toggle="collapse" data-bs-target="#comments1"><i
+                                    class="fa-regular fa-comment"></i> Comment</button>
+                            <button class="btn btn-sm"><i class="fa-solid fa-share"></i> Share</button>
+                        </div>
+                        <button class="btn btn-sm"><i class="fa-regular fa-bookmark"></i> Save</button>
+                    </div>
+
+                    <!-- Comments -->
+                    <div class="collapse" id="comments1">
+                        <div class="feed-body border-top">
+                            <input type="text" class="form-control" placeholder="Add a comment...">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Sidebar -->
+
+            <div class="d-none d-lg-block col-lg-3 mt-lg-4">
+                <div class="right-cards card rounded-3 mb-4 p-3">
+                    <h6>Trending Books</h6>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="badge bg-secondary">#Fiction</span>
+                        <span class="badge bg-secondary">#Mystery</span>
+                        <span class="badge bg-secondary">#Romance</span>
+                        <span class="badge bg-secondary">#ScienceFiction</span>
+                        <span class="badge bg-secondary">#Fantasy</span>
+                        <span class="badge bg-secondary">#NonFiction</span>
+                        <span class="badge bg-secondary">#Thriller</span>
+                        <span class="badge bg-secondary">#HistoricalFiction</span>
+                        <span class="badge bg-secondary">#YoungAdult</span>
+                        <span class="badge bg-secondary">#Classics</span>
+                    </div>
+                </div>
+                <div class="right-cards card rounded-3 mb-4 p-3">
+
+                    <h6>Suggested Users</h6>
+                    <div class="right-card d-flex flex-column gap-2 mb-3">
+                        <a href="#" class="list-item">john doe</a>
+                        <a href="#" class="list-item">jane smith</a>
+                    </div>
+                </div>
+                <div class="right-cards card rounded-3 mb-4 p-3">
+
+                    <h6>Events</h6>
+                    <div class="right-card d-flex flex-column gap-2">
+                        <a href="#" class="list-item">Book Reading Event</a>
+                        <a href="#" class="list-item">Challenge Week</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Bottom Navbar
+        <div class="bottom-nav d-lg-none">
+            <a href="#"><i class="fa-solid fa-house fs-5"></i></a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass fs-5"></i></a>
+            <a href="#"><i class="fa-solid fa-bell fs-5"></i></a>
+            <a href="#"><i class="fa-solid fa-user fs-5"></i></a>
+        </div> -->
+
+    </section>
+
+
+
 </body>
+
 </html>
