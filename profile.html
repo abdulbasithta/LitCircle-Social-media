@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User profile</title>
+    <!-- bs cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- bs js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- nabvar section -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container">
+            <a class="navbar-brand " href="./index.html">
+                <i class="fa-solid fa-book-open"></i>
+                LitCircle
+            </a>
+            <form class="d-flex mx-auto" role="search">
+                <div class="search-container">
+                    <i class="fa-solid fa-search search-icon"></i>
+                    <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
+                </div>
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mb-2">
+                    <li class="nav-item me-lg-4">
+                        <a class="nav-link" href="./post-list.html">Home</a>
+                    </li>
+                    <li class="nav-item me-lg-3 mb-sm-2">
+                        <a class="nav-link position-relative" href="#">
+                            Notification
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-lg-4">
+                        <a class="nav-link" href="#">Messages</a>
+                    </li>
+                    <li class="nav-item dropdown position-relative">
+                        <a class=" dropdown-toggle ms-5" href="#" role="button" data-bs-toggle="dropdown">
+                            <img src="./images/oguz-yagiz-kara-MZf0mI14RI0-unsplash.jpg"
+                                class="rounded-circle position-absolute top-0  start-0" width="35" height="35"
+                                alt="Profile">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- profile section -->
+
+    <section class="container my-4">
+
+        <!-- profile header -->
+        <div class="profile-header">
+            <div>
+                <img src="./images/oguz-yagiz-kara-MZf0mI14RI0-unsplash.jpg" alt="Profile picture">
+            </div>
+            <div>
+                <h2>Brixton Otto</h2>
+                <p>Book Lover | Avid Reader | Literature Enthusiast</p>
+                <p>The only thing that you absolutely have to know is the location of the library.</p>
+                <p><i class="fa-solid fa-location-dot"></i> New York, USA
+                    <i class="fa-solid fa-calendar ms-5"></i> Joined
+                    Jan 2025
+                </p>
+                <div class="profile-stats">
+                    <h6>200</h6><small>Followers</small>
+                    <h6>180</h6><small>Following</small>
+                    <h6>6</h6><small>Posts</small>
+                </div>
+                <div class="profile-actions">
+                    <button class="btn1">Edit Profile</button>
+                    <button class="btn2">Share Profile</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+
+        <ul class="nav nav-underline" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="post-tab" data-bs-toggle="tab" data-bs-target="#post-tab-pane"
+                    type="button" role="tab" aria-controls="post-tab-pane" aria-selected="true">Posts</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="book-tab" data-bs-toggle="tab" data-bs-target="#book-tab-pane"
+                    type="button" role="tab" aria-controls="book-tab-pane" aria-selected="false">Bookshelf</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="club-tab" data-bs-toggle="tab" data-bs-target="#club-tab-pane"
+                    type="button" role="tab" aria-controls="club-tab-pane" aria-selected="false">Clubs</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="post-tab-pane" role="tabpanel" aria-labelledby="post-tab"
+                tabindex="0">
+
+                <div class="tab-post">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <img src="./images/silent.webp" alt="Post 1">
+                        </div>
+                        <div class="col">
+                            <img src="./images/Atmosphere-by-Taylor-Jenkins-Reid.jpg" alt="Post 2">
+                        </div>
+                        <div class="col">
+                            <img src="./images/thoa-ngo-UhdlN7u87nA-unsplash.jpg" alt="Post 3">
+                        </div>
+                        <div class="col">
+                            <img src="./images/The Silent Patient.jpeg" alt="Post 4">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="book-tab-pane" role="tabpanel" aria-labelledby="book-tab" tabindex="0">
+
+                <p>No books to display.</p>
+
+            </div>
+            <div class="tab-pane fade" id="club-tab-pane" role="tabpanel" aria-labelledby="club-tab" tabindex="0">
+
+                <p>No clubs to display</p>
+
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
