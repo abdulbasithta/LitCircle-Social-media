@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User profile</title>
+    <title>Profile Edit</title>
     <!-- bs cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -73,82 +73,60 @@
         </div>
     </nav>
 
-    <!-- profile section -->
+    <section class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <h3 class="profile-title">Set Up Your Profile</h3>
+                <form action="">
+                    <div class="mb-4 text-center">
+                        <i class="fa-regular fa-user profile-preview" id="previewIcon"></i>
+                        
+                        <label for="fileUpload" class="upload-btn mt-2">Change Photo</label>
+                        <input type="file" id="fileUpload" class="file-control d-none" accept="image/*">
+                    </div>
 
-    <section class="container my-4">
-
-        <!-- profile header -->
-        <div class="profile-header">
-            <div>
-                <img src="./images/oguz-yagiz-kara-MZf0mI14RI0-unsplash.jpg" alt="Profile picture">
-            </div>
-            <div>
-                <h2>Brixton Otto</h2>
-                <p>Book Lover | Avid Reader | Literature Enthusiast</p>
-                <p>The only thing that you absolutely have to know is the location of the library.</p>
-                <p><i class="fa-solid fa-location-dot"></i> New York, USA
-                    <i class="fa-solid fa-calendar ms-5"></i> Joined
-                    Jan 2025
-                </p>
-                <div class="profile-stats">
-                    <h6>200</h6><small>Followers</small>
-                    <h6>180</h6><small>Following</small>
-                    <h6>4</h6><small>Posts</small>
-                </div>
-                <div class="profile-actions">
-                    <button class="btn1" onclick="window.location.href='./profile-add.html'">Edit Profile</button>
-                    <button class="btn2">Share Profile</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tabs -->
-
-        <ul class="nav nav-underline" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="post-tab" data-bs-toggle="tab" data-bs-target="#post-tab-pane"
-                    type="button" role="tab" aria-controls="post-tab-pane" aria-selected="true">Posts</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="book-tab" data-bs-toggle="tab" data-bs-target="#book-tab-pane"
-                    type="button" role="tab" aria-controls="book-tab-pane" aria-selected="false">Bookshelf</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="club-tab" data-bs-toggle="tab" data-bs-target="#club-tab-pane"
-                    type="button" role="tab" aria-controls="club-tab-pane" aria-selected="false">Clubs</button>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="post-tab-pane" role="tabpanel" aria-labelledby="post-tab"
-                tabindex="0">
-
-                <div class="tab-post">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div class="col">
-                            <img src="./images/silent.webp" alt="Post 1">
-                        </div>
-                        <div class="col">
-                            <img src="./images/Atmosphere-by-Taylor-Jenkins-Reid.jpg" alt="Post 2">
-                        </div>
-                        <div class="col">
-                            <img src="./images/thoa-ngo-UhdlN7u87nA-unsplash.jpg" alt="Post 3">
-                        </div>
-                        <div class="col">
-                            <img src="./images/The Silent Patient.jpeg" alt="Post 4">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Bio</label>
+                        <textarea class="form-control" rows="3" placeholder="Write a short bio"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Location</label>
+                        <input type="text" class="form-control" placeholder="Enter your location">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Favorite Genre</label>
+                        <div class="d-flex flex-wrap gap-2">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="genre1">
+                                <label for="genre1" class="form-check-label">Fiction</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="genre2">
+                                <label for="genre2" class="form-check-label">Fantasy</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="genre3">
+                                <label for="genre3" class="form-check-label">Mistery</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="genre4">
+                                <label for="genre4" class="form-check-label">Romance</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="genre5">
+                                <label for="genre5" class="form-check-label">Horror</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-            </div>
-            <div class="tab-pane fade" id="book-tab-pane" role="tabpanel" aria-labelledby="book-tab" tabindex="0">
-
-                <p>No books to display.</p>
-
-            </div>
-            <div class="tab-pane fade" id="club-tab-pane" role="tabpanel" aria-labelledby="club-tab" tabindex="0">
-
-                <p>No clubs to display</p>
-
+                    <div class="d-flex justify-content-center profile-actions mt-4 mb-5">
+                        <button class="btn1">Save changes</button>
+                        <button class="btn2">Cancel</button>
+                    </div>
+                </form>
             </div>
         </div>
 
